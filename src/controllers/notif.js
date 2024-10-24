@@ -8,8 +8,8 @@ const sendNotification = (req, res) => {
   if (title && body) {
     const message = {
       notification: {
-        title: "req.body?.title",
-        body: "req.body?.body",
+        title: req.body?.title,
+        body: req.body?.body,
       },
       token,
     };
